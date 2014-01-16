@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Parse Extras Android</string>
+
+    <string name="parse_extras_button_login">Log in</string>
+    <string name="parse_extras_button_facebook">Facebook</string>
+    <string name="parse_extras_button_sign_up">Sign up</string>
+    <string name="parse_extras_username">Username</string>
+    <string name="parse_extras_password">Password</string>
+    <string name="parse_extras_login_extras">You can also log in with:</string>
+    <string name="parse_extras_no_account_yet">Don\'t have an account yet?</string>
+    <string name="parse_extras_forgot">Forgot?</string>
+    <string name="parse_extras_login_title">Parse</string>
+    <string name="parse_extras_email">Email</string>
+    <string name="parse_extras_enter_email_address">Please enter the email address for your account.</string>
+    <string name="parse_extras_forgot_dialog_title">Enter Email</string>
+    <string name="parse_extras_password_reset">An email with reset instructions has been sent to %1$s</string>
+
+</resources>

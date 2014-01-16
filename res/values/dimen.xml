@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="parse_extras_screen_margin">30dip</dimen>
+    <dimen name="parse_extras_edittext_height">40sp</dimen>
+    <dimen name="parse_extras_half_edittext_height">20sp</dimen>
+</resources>

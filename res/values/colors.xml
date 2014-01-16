@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="parse_extras_button_facebook_start">#6B87CF</color>
+    <color name="parse_extras_button_facebook_end">#2A3884</color>
+    <color name="parse_extras_button_facebook_selected_start">#242C73</color>
+    <color name="parse_extras_button_facebook_selected_end">#181D4A</color>
+
+    <color name="parse_extras_button_login_start">#7C7C7C</color>
+    <color name="parse_extras_button_login_end">#434242</color>
+    <color name="parse_extras_button_login_selected_start">#403F3F</color>
+    <color name="parse_extras_button_login_selected_end">#2D2C2C</color>
+
+    <color name="parse_extras_button_sign_up_start">#1C720F</color>
+    <color name="parse_extras_button_sign_up_end">#0E3B0A</color>
+    <color name="parse_extras_button_sign_up_selected_start">#154C03</color>
+    <color name="parse_extras_button_sign_up_selected_end">#0D3201</color>
+</resources>

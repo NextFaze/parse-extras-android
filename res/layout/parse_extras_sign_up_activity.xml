@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:onClick="buttonPressed"
+            android:src="@drawable/parse_extras_button_close"
+            android:id="@+id/button_close" />
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/parse_extras_screen_margin"
+            android:gravity="center">
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/parse_extras_screen_margin">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/parse_extras_login_title"
+                    android:id="@+id/title_text"
+                    android:textSize="40sp"
+                    android:gravity="center"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/title_image"/>
+        </FrameLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <EditText
+                    style="@style/ParseExtrasEditText"
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/parse_extras_username"
+                    android:inputType="textNoSuggestions"/>
+            <EditText
+                    style="@style/ParseExtrasEditText"
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/parse_extras_password"
+                    android:inputType="textPassword"/>
+            <EditText
+                    style="@style/ParseExtrasEditText"
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/parse_extras_email"
+                    android:inputType="textEmailAddress"/>
+
+            <Button
+                    style="@style/ParseExtrasButton"
+                    android:background="@drawable/parse_extras_button_sign_up_background"
+                    android:onClick="buttonPressed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/parse_extras_button_sign_up"
+                    android:id="@+id/button_sign_up"
+                    android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

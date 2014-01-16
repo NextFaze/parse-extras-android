@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:onClick="buttonPressed"
+            android:src="@drawable/parse_extras_button_close"
+            android:id="@+id/button_close" />
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+        <FrameLayout
+                android:layout_marginBottom="@dimen/parse_extras_screen_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/parse_extras_login_title"
+                    android:id="@+id/title_text"
+                    android:textSize="40sp"
+                    android:gravity="center"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/title_image"/>
+        </FrameLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="@dimen/parse_extras_screen_margin"
+                    android:layout_marginTop="@dimen/parse_extras_half_edittext_height"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                <com.nextfaze.android.parse_extras.widget.VerticalButton
+                        android:background="@drawable/parse_extras_button_forgot_background"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/parse_extras_forgot"
+                        android:id="@+id/button_forgot"
+                        android:onClick="buttonPressed"
+                        android:textColor="@android:color/white"
+                        android:paddingLeft="5sp"
+                        android:paddingRight="5sp"
+                        android:paddingTop="2sp"
+                        android:paddingBottom="2sp"
+                        android:textSize="10sp"
+                        android:layout_marginRight="2px"
+                        android:gravity="bottom|right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/parse_extras_screen_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        style="@style/ParseExtrasEditText"
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/parse_extras_username"
+                        android:inputType="textNoSuggestions"/>
+                <EditText
+                        style="@style/ParseExtrasEditText"
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/parse_extras_password"
+                        android:inputType="textPassword"/>
+
+                <Button
+                        style="@style/ParseExtrasButton"
+                        android:background="@drawable/parse_extras_button_login_background"
+                        android:onClick="buttonPressed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/parse_extras_button_login"
+                        android:id="@+id/button_log_in"
+                        android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/parse_extras_login_extras"
+                        android:layout_marginTop="20dip"
+                        android:gravity="center"/>
+                <Button
+                        style="@style/ParseExtrasButton"
+                        android:background="@drawable/parse_extras_button_facebook_background"
+                        android:drawableLeft="@drawable/parse_extras_facebook_logo"
+                        android:drawablePadding="-20sp"
+                        android:onClick="buttonPressed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/parse_extras_button_facebook"
+                        android:id="@+id/button_facebook"
+                        android:layout_gravity="center_horizontal"/>
+
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/parse_extras_no_account_yet"
+                        android:layout_marginTop="20dip"
+                        android:gravity="center"/>
+                <Button
+                        style="@style/ParseExtrasButton"
+                        android:background="@drawable/parse_extras_button_sign_up_background"
+                        android:onClick="buttonPressed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/parse_extras_button_sign_up"
+                        android:id="@+id/button_sign_up"
+                        android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
